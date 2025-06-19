@@ -1,3 +1,13 @@
+/**
+ * Vercel Serverless Function (API route): /pages/api/esp.js
+ */
+
+
+
+/**
+ * Main Component: Logicgates.js
+ */
+
 import React, { useState, useEffect } from 'react';
 import { Button, Spinner, Switch } from '@material-tailwind/react';
 
@@ -31,9 +41,11 @@ const Logicgates = () => {
       alert('Please enter the ESP32 IP address first!');
       return;
     }
-    const url = `http://${espIP}/output?value=${value}`;
+    const url = `/api/esp?ip=${espIP}&value=${value}`;
     try {
-      await fetch(url);
+      const res = await fetch(url);
+      const data = await res.json();
+      console.log('ESP32 Response:', data);
     } catch (err) {
       console.error('ESP32 connection failed:', err);
     }
