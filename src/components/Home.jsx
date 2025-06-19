@@ -7,7 +7,7 @@ function Home() {
   const [is_select,Setis_select]=useState();
   return (
     <>
-    <Sidnav is_select={is_select} Setis_select={Setis_select}/>
+    {/* <Sidnav is_select={is_select} Setis_select={Setis_select}/> */}
     <Logicgates is_select={is_select} Setis_select={Setis_select}/>
      
     </>
