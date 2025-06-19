@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: linear-gradient(to bottom right, #333d51, #161a21);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 24px;
+ 
+}
+
+.title {
+  font-size: 26px;
+  color: 	#ffffff;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card {
+ background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+
+
+}
+
+
+.dropdown {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #242c3b;
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 50 L70 110 L130 50' stroke='%23ffffff' stroke-width='15' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown option {
+  background-color: #1a1f2b;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+
+
+.buttonRow {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.inputButton {
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #3c475d, #1b273d);
+  color: white;
+  font-size: 16px;
+border: 1px solid #39404d;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* elevated soft shadow */
+}
+
+.inputButton:hover{
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);  
+}
+.inputButton.active {
+  background: linear-gradient(to right, #3aa3e9, #3d63d1);
+   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); 
+}
+
+.sendButton {
+  margin-top: 30px;
+  background: linear-gradient(to right, #3aa3e9, #3d63d1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 18px;
+    font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.sendButton:hover {
+  opacity: 0.85;
+}
